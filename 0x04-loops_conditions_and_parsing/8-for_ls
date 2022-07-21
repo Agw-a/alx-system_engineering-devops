@@ -1,3 +1,3 @@
 #usr/bin/env bash
 #dispalys The content of the current directory
-for l in *; do echo "$l" | cut -d '-' -f 2; done
+for f in *; do echo "$f" | cut -d '-' -f 2; done

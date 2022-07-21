@@ -2,7 +2,7 @@
 #gives you information about the school fil
 if [ -e "school" ]
 then
-echo "chool file exists"
+echo "school file exists"
 if [ -s "school" ]
 then
 echo "school file is not empty"
