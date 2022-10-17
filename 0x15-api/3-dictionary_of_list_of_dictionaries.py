@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Python script that using REST api return info on an employee"""
+import json
 import requests
 import sys
 
