@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""""""
+"""Python script that using REST api return info on an employee"""
 import requests
 import sys
 
 
-if __name__=='__main__':
+if __name__ == '__main__':
     url = 'https://jsonplaceholder.typicode.com/users/' + sys.argv[1]
     response = requests.get(url)
     name = response.json().get("name")
@@ -20,7 +20,7 @@ if __name__=='__main__':
                 done += 1
                 taskName.append(i.get("title"))
     print("Employee {} is done with tasks({}/{}):".format(name,
-                                                         done,
-                                                         task))
+                                                          done,
+                                                          task))
     for n in taskName:
         print("\t {}".format(n))
